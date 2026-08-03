@@ -2,8 +2,6 @@ import React from "react"
 
 export default function Cart(props) {
 
-    const [price, setPrice] = React.useState(props.price)
-
     return(
         <>
             <div className="row">
@@ -11,8 +9,10 @@ export default function Cart(props) {
                 <div className="column-item">
                     
                     <div>
+                        
                         <img alt="product-img" src={props.thumbnail} />
                         <h3>{props.title}</h3>
+                    
                     </div>
 
                     <p>Qty:{props.qty}</p>

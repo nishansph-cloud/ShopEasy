@@ -50,7 +50,8 @@ export default function Shopping(props) {
         }, 0) 
         const itemNames = yourCart.map(items => items.title)
         const itemQuantity = yourCart.map(items => items.qty)
-        console.log("Purchased : ", itemNames , " quantity :",itemQuantity, " Worth :",totalPrice.toFixed(2) )
+        console.log("Purchased : ", itemNames , " quantity :",itemQuantity, " Worth: Rs."+totalPrice.toFixed(2) )
+        alert("You have purchased :"+" "+itemNames )
         console.log() 
         setYourCart([])
     }
